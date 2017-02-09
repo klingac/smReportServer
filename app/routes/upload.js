@@ -17,7 +17,7 @@ router.post('/', function(req, res, next) {
   sampleFile = req.files.sampleFile;
  
   // Use the mv() method to place the file somewhere on your server 
-  sampleFile.mv('/srv/uploads/'+req.files.sampleFile.name, function(err) {
+  sampleFile.mv('public/uploads/'+req.files.sampleFile.name, function(err) {
     if (err) {
       res.status(500).send(err);
     }

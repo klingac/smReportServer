@@ -30,13 +30,13 @@ app.use(require('node-sass-middleware')({
   sourceMap: true
 }));
 app.use(express.static(path.join(__dirname, 'public')));
-//app.use('/upload/list', serveIndex(path.join(__dirname, 'public')));
-app.use('/upload/list', serveIndex('/srv/uploads'));
 app.use(fileUpload());
 
 app.use('/', index);
 app.use('/users', users);
 app.use('/upload', upload);
+app.use('/upload/list', express.static(path.join(__dirname, 'public/uploads')));
+app.use('/upload/list', serveIndex(path.join(__dirname, 'public/uploads')));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

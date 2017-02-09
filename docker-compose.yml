@@ -2,7 +2,6 @@ web:
   build: .
   volumes:
     - "./app:/src/app"
-    - "./uploads:/srv/uploads"
   ports:
     - "3030:3000"
     - "35729:35729"
