@@ -1,0 +1,25 @@
+{
+  "name": "smReportServer",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "gulp --gulpfile app/gulpfile.js"
+  },
+  "dependencies": {
+    "express": "^4.14.1",
+    "body-parser": "~1.16.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "hjs": "~0.0.6",
+    "morgan": "~1.7.0",
+    "node-sass-middleware": "0.9.8",
+    "serve-favicon": "~2.3.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-watch": "^4.3.11"
+  }
+}
