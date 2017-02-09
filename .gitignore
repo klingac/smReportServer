@@ -38,3 +38,6 @@ jspm_packages
 
 # vim *.swp files
 *.swp
+
+#.jetbrains files
+.idea
