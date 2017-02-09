@@ -6,14 +6,16 @@
     "start": "gulp --gulpfile app/gulpfile.js"
   },
   "dependencies": {
-    "express": "^4.14.1",
     "body-parser": "~1.16.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.0",
+    "express": "^4.14.1",
+    "express-fileupload": "0.0.6",
     "hjs": "~0.0.6",
     "morgan": "~1.7.0",
     "node-sass-middleware": "0.9.8",
-    "serve-favicon": "~2.3.2"
+    "serve-favicon": "~2.3.2",
+    "serve-index": "^1.8.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
