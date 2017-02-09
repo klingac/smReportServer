@@ -15,7 +15,8 @@
     "morgan": "~1.7.0",
     "node-sass-middleware": "0.9.8",
     "serve-favicon": "~2.3.2",
-    "serve-index": "^1.8.0"
+    "serve-index": "^1.8.0",
+    "unzip": "^0.1.11"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

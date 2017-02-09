@@ -1,4 +1,7 @@
 var express = require('express');
+var path = require('path');
+var fs = require('fs');
+var unzip = require('unzip');
 var router = express.Router();
 
 router.get('/', function(req, res, next) {
@@ -22,7 +25,9 @@ router.post('/', function(req, res, next) {
       res.status(500).send(err);
     }
     else {
-      res.send('File uploaded!');
+        fs.createReadStream(path.join(__dirname, '../public/uploads/' + req.files.sampleFile.name))
+                                .pipe(unzip.Extract({ path: path.join(__dirname,'../tmp') }));
+        res.send('File uploaded!');
     }
   });
 });
